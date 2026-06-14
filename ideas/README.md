@@ -2,4 +2,4 @@
 
 ### Table of Content
 
-- [TEMPLATE.md](ideas/TEMPLATE.md)
+- [TEMPLATE.md](TEMPLATE.md)
