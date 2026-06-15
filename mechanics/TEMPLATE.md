@@ -31,13 +31,16 @@ Describe the mechanic's rules and processes.
 
 ...
 
-## Player Interaction
+## Player Interaction & Tradeoffs
 
 What decisions does the player make?
 
+What are the tradeoffs involved?
+
 - Decision 1
+- Tradeoff 1
 - Decision 2
-- Decision 3
+- Tradeoff 2
 
 ## Progression
 
