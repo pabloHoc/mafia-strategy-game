@@ -127,7 +127,7 @@ Removing them may cause:
 - Loss of efficiency
 - Disloyalty
 
-## Player Interaction
+## Player Interaction & Tradeoffs
 
 Players decide:
 
@@ -137,6 +137,13 @@ Players decide:
 - Whether to centralize or distribute power.
 - How to respond to ambitions.
 - Whether to remove dangerous lieutenants.
+
+Tradeoffs:
+
+- Promote a candidate now for capacity, or keep the group strong.
+- Concentrate assets under a powerful lieutenant, or distribute power.
+- Support ambitions for benefits, or suppress them and risk unrest.
+- Keep a dangerous but effective lieutenant, or remove them and destabilize the organization.
 
 ## Progression
 
