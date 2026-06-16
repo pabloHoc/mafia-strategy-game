@@ -151,6 +151,15 @@ This loop generates emergent stories and long-term organizational evolution.
 - Focus on identity and governance.
 - Growth creates risk.
 
+### Success Criteria
+
+A successful Organization mechanic should:
+
+- Generate recurring strategic decisions.
+- Create emergent stories through leadership and politics.
+- Connect multiple systems through shared attributes.
+- Make growth both desirable and dangerous.
+
 ### Failure Modes
 
 - Character Sheet Syndrome: static choices without recurring decisions.
