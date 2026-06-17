@@ -32,6 +32,7 @@ District
 - Tags
 - Influence (per organization)
 - Slots
+- Point of Interests (PoI)
 - Conditions
 ```
 
@@ -82,30 +83,68 @@ They feed multiple systems:
 
 ## Points of Interest (PoIs)
 
-Points of Interest are strategic locations or institutions inside a district that modify how the district behaves and is contested.
+Points of Interest are **strategic locations or institutions inside a district that modify how the district behaves and is contested**.
 
 They represent concentrated sources of leverage, conflict, or opportunity.
 
 ### Key Properties
 
-- PoIs are pre-existing or emergent, not player-built structures.
-- They are rare and meaningful, not decorative.
-- They act as rule modifiers and strategic targets.
+- PoIs are **pre-existing or emergent**, not player-built structures.
+- They are **rare and meaningful**, not granular or decorative.
+- They act as **rule modifiers and strategic targets**.
+
+---
 
 ### What PoIs do
 
-PoIs can:
+A PoI can:
 
-1. Modify district rules
-2. Unlock mechanics
-3. Create strategic targets
-4. Generate mission opportunities
+#### 1. Modify district rules
+Example:
+- A Black Market increases income from illegal activity but raises heat generation.
+
+#### 2. Enable or unlock mechanics
+Example:
+- A Cathedral enables influence-based religious operations.
+
+#### 3. Create strategic targets
+PoIs can be:
+- infiltrated
+- corrupted
+- controlled
+- destroyed or transformed
+
+#### 4. Generate unique mission opportunities
+PoIs are often the source of high-value missions.
+
+---
 
 ### Types of PoIs
 
-- Fixed PoIs
-- Emergent PoIs
-- Transformed PoIs
+PoIs can appear as:
+
+#### Fixed PoIs
+- Existing locations (docks, markets, temples, casinos)
+
+#### Emergent PoIs
+- Created through events, missions, or conditions
+
+#### Transformed PoIs
+- Existing PoIs that change state over time (e.g. casino → money laundering hub)
+
+---
+
+### Key Rule
+
+PoIs are **not buildings constructed by the player**.
+
+They are **objects of control and transformation**.
+
+---
+
+### Design Intent
+
+PoIs create **localized power centers that shape district identity and conflict**.
 
 ---
 
@@ -127,34 +166,40 @@ Rival Family: 25
 
 ## Slots
 
-Slots represent the structural capacity of a district to host systems.
+## Slots
+
+Slots represent the **structural capacity of a district to host systems**.
+
+They do not define *what* must be placed there, only **how much can be active at the same time**.
+
+Slots are intentionally generic.
 
 ### Purpose of Slots
 
-- Limit simultaneous systems operating in a district
-- Force strategic tradeoffs between different forms of power
-- Prevent over-optimization of all systems in a single district
-- Create vulnerability through overextension
+- Limit simultaneous systems operating in a district.
+- Force strategic tradeoffs between different forms of power.
+- Prevent full optimization of all systems in a single district.
+- Create vulnerability through overextension.
 
 ### What can occupy slots
 
 Slots may be used by:
 
 - Assets (persistent systems such as smuggling networks or propaganda cells)
-- Force presence (enforcers, agents, district control pressure)
-- Other long-term district systems
+- District-level force presence (e.g. enforcement groups, garrisons, agent presence)
+- Other long-term district systems (future expansions)
 
 ### Key Rule
 
-Slots are not typed.
+Slots are **not typed**.
 
 A slot does not inherently belong to economy, influence, or combat.
 
-Instead, systems impose their own behavior once installed.
+Instead, systems impose their own requirements and effects once installed.
 
 ### Design Intent
 
-Slots are a pressure mechanism, not a categorization system.
+Slots are a **pressure mechanism**, not a categorization system.
 
 ---
 
@@ -169,94 +214,87 @@ Examples:
 - Plague
 
 ---
+## District Runtime Model
 
-## Runtime Model
+Districts operate in a continuous resolution cycle during gameplay.
 
-Districts operate in a continuous resolution cycle that simulates the evolving state of each territory over time.
+This cycle defines how assets, influence, and conditions interact over time.
+
+---
 
 ### 1. State Read
 
-The system reads the current district state as the baseline for simulation, including:
+At the start of a cycle, the district reads:
 
-- Influence distribution across organizations
-- Active assets and their statuses
-- Current conditions affecting the district
-- Slot occupancy and pressure
-- PoI ownership and states
-
-This step establishes the authoritative snapshot of the district before resolution begins.
+- Influence per organization
+- Active assets
+- Active conditions
+- Slot usage
+- PoI ownership states
 
 ---
 
 ### 2. Asset Resolution
 
-All installed assets execute their continuous effects.
+Assets execute their continuous effects.
 
-These may include:
-
-- Generation of income or resources
-- Shifts in influence distribution
-- Heat or instability changes
-- Modification or reinforcement of conditions
-
-Assets represent persistent infrastructure and always contribute baseline effects.
+Examples:
+- Generate income
+- Modify influence
+- Increase or decrease heat
+- Alter district conditions
 
 ---
 
 ### 3. Condition Resolution
 
-Active conditions apply their effects to the district.
+Conditions apply temporary or persistent modifiers to the district.
 
-Conditions may:
-
-- Modify asset efficiency
-- Alter influence gain or loss rates
-- Change slot effectiveness or stability
-- Trigger secondary interactions with PoIs
-
-Conditions represent the evolving state of the environment.
+Examples:
+- Riots reduce stability and disrupt assets
+- Festivals increase influence generation opportunities
+- Gang wars increase volatility and mission availability
 
 ---
 
 ### 4. Influence Update
 
-Influence values are recalculated based on:
+Influence values are adjusted based on:
 
-- Asset outputs
+- Asset output
+- Mission outcomes
 - Condition effects
-- Mission results
-- PoI control and modifiers
+- PoI control
 
-This step determines how control shifts between organizations.
-
----
-
-### 5. Slot Pressure Application
-
-Slots enforce structural constraints on how many systems can operate simultaneously.
-
-When districts are overextended or contested, slots may introduce:
-
-- Reduced efficiency of installed systems
-- Increased instability or exposure
-- Vulnerability to enemy interference or takeover
-
-Slots define capacity pressure rather than system type.
+This determines relative control states in the district.
 
 ---
 
-### 6. Event Checks
+### 5. Slot Effects Application
 
-The system evaluates whether thresholds have been reached that trigger emergent events.
+Slots determine **how many systems can be active**, not what they are.
 
-These may include:
+Overcapacity or contested slots may introduce:
+- reduced efficiency
+- instability
+- vulnerability to enemy actions
 
-- Power shifts between organizations
-- Civil unrest or escalation
-- External interventions
-- New mission opportunities generated by district conditions
+---
 
-Events ensure districts remain dynamic and reactive rather than static.
+### 6. Event Trigger Check
+
+If thresholds are met, the district may generate events:
+
+- Power shifts
+- Outbreaks of violence
+- Political interventions
+- Opportunistic mission generation
+
+---
+
+### Design Intent
+
+The runtime model ensures districts are **dynamic systems where multiple forces continuously interact**, rather than static containers of bonuses.
 
 ---
 
@@ -282,3 +320,27 @@ The runtime model ensures districts function as dynamic, evolving systems where 
 ## Core Insight
 
 Districts are contested spaces of evolving power, not static territory.
+
+## Open Questions
+[QUESTION] What exactly is Force Presence: a subtype of assets, a separate system, or a district-level modifier layer?
+[QUESTION] What are the exact rules for slot occupancy (single system per slot vs stacking vs partial occupancy)?
+[QUESTION] How are Points of Interest captured, contested, and transferred between organizations?
+[QUESTION] How does influence translate into actual control states beyond threshold labels?
+[QUESTION] Can Conditions modify structural systems such as slots, assets, or PoIs, or are they strictly modifiers?
+[QUESTION] What is the strict separation boundary between Assets and Conditions in terms of allowed effects?
+[QUESTION] What is the exact origin logic of Events (threshold-based, PoI-driven, condition-driven, random, or hybrid)?
+[QUESTION] What is the temporal structure of the runtime model (turn-based, tick-based, or real-time simulation)?
+[QUESTION] What is the intended scale of districts (number of districts and gameplay granularity per district)?
+[QUESTION] What information is visible to the player regarding enemy influence, PoIs, assets, and internal district state?
+
+## TODO
+[] Define Force Presence as a formal system (ownership, effects, and interaction rules)
+[] Define Slot occupancy rules (capacity model, stacking rules, and constraints)
+[] Define PoI capture/contest/transfer mechanics
+[] Define Influence-to-Control conversion as a mechanical system (not only thresholds)
+[] Define Conditions interaction boundaries with Assets, Slots, and PoIs
+[] Define strict separation rules between Assets and Conditions
+[] Define Event generation system (sources, triggers, and resolution rules)
+[] Define Runtime temporal model (tick definition and resolution ordering)
+[] Define District scale and density model (number of districts and abstraction level)
+[] Define Information/visibility rules for districts and their systems
