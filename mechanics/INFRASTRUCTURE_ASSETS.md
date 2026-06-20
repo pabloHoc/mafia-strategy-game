@@ -45,6 +45,19 @@ The player must decide:
 - When to use it.
 - What purpose to use it for.
 
+Infrastructure Assets are organizational leverage.
+
+They may support:
+
+- Missions
+- District control
+- Recruitment
+- Event resolution
+- Crisis management
+- Institutional interaction
+
+Missions are only one consumer of that leverage.
+
 ---
 
 # Gameplay Loop
@@ -216,6 +229,10 @@ Smuggling Route:
 
 Only one location at a time.
 
+Relocating infrastructure should be costly, slow, risky, or otherwise meaningful.
+
+The player should not freely reshuffle assets every turn.
+
 ---
 
 ## Tactical
@@ -234,6 +251,21 @@ Using it for one purpose may prevent other uses.
 
 ---
 
+## Occupancy
+
+Committed assets are not free.
+
+Using an asset may temporarily:
+
+- Occupy it
+- Exhaust it
+- Expose it
+- Degrade it
+
+This prevents assets from becoming passive modifiers applied everywhere.
+
+---
+
 ## Risk
 
 Using assets creates exposure.
@@ -243,6 +275,39 @@ Powerful infrastructure tends to attract:
 - Police attention
 - Rival interest
 - Institutional pressure
+
+Assets may become liabilities if overused.
+
+---
+
+# Asset Synergies
+
+Certain combinations of infrastructure may unlock new opportunities.
+
+Examples:
+
+- Black Market + Smuggling Route
+- Safehouse + Spy Network
+- Casino + Political Club
+
+These should primarily unlock new actions, opportunities, or mission options rather than provide flat numerical bonuses.
+
+Synergies create incentives to build coherent district ecosystems.
+
+---
+
+# Asset Vulnerability
+
+Infrastructure exists in the world and can be targeted.
+
+Examples:
+
+- Police crackdowns
+- Rival sabotage
+- Institutional investigations
+- Internal betrayal
+
+Powerful assets create leverage, but also create targets that must be protected.
 
 ---
 
@@ -275,6 +340,14 @@ Smuggling Route:
 
 Assets may solve similar mission requirements while remaining strategically distinct.
 
+A useful design test:
+
+1. What opportunities does this asset provide?
+2. What mission requirements can it help solve?
+3. Why is it different from every other asset?
+
+If question #3 is difficult to answer, the asset may be too generic.
+
 ---
 
 # Open Questions
@@ -295,6 +368,8 @@ Assets may solve similar mission requirements while remaining strategically dist
 - [ ] Define mission requirement taxonomy.
 - [ ] Define asset commitment/exhaustion rules.
 - [ ] Define exposure and disruption mechanics for assets.
+- [ ] Define relocation rules and costs.
 - [ ] Define district range rules (local vs neighboring districts).
+- [ ] Define first-pass asset synergy rules.
 - [ ] Create first pass list of infrastructure assets and their opportunities.
 - [ ] Stress test with 20+ asset examples to detect overlap and genericization.
