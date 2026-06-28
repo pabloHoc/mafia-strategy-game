@@ -1,6 +1,6 @@
 # Intel Exploration — Intelligence Networks & Investigations
 
-**Status:** Exploration
+**Status:** Discarded. Superseeded by [INTEL MECHANIC](../mechanics/INTEL.md)
 
 ## Core Realization
 
