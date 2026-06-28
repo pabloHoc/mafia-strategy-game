@@ -134,7 +134,7 @@ This is a high-level **system graph of what exists and how state changes**.
 - updated by all entity systems
 - produces new opportunities (missions, intel, events)
 
-# 3. Key Interaction Loops (MOST IMPORTANT PART)
+# 3. Key Interaction Loops
 
 These are the **actual gameplay loops implied by the model**:
 
@@ -215,28 +215,3 @@ _“What you commit to doing”_
 **World Layer (Districts + Institutions)**
 
 _“What reacts and evolves”_
-
-# 5. What this model reveals (design truth)
-
-Ths system is structurally:
-
-A closed loop of capability → knowledge → action → reaction
-
-And importantly:
-
-- nothing is purely static
-- nothing is purely consumable
-- everything is stateful and networked
-
-# 6. The only remaining hidden risk
-
-This model is now complete enough that the only real risk left is:
-
-state overload (too many interacting persistent states)
-
-Meaning:
-
-- too many overlapping “active things” at once
-- difficulty reading what matters at a given moment
-
-But that is not a structural problem — it is a **UI + abstraction problem**, not a design one.
