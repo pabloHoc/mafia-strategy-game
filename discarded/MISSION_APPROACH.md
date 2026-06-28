@@ -1,5 +1,7 @@
 # Mission Approaches, Axes, and Resolution
 
+**Status:** Discarded. Superseeded by [MISSIONS](../mechanics/MISSIONS.md)
+
 ## Core Idea
 
 Introduce **Approaches** (formerly "Means") as mission stances that define **how** a mission is executed.
