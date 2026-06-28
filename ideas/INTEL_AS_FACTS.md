@@ -1,4 +1,4 @@
-# Intel / Investigation System — Checkpoint
+# Intel as Facts (Investigation System)
 
 **Status**
 
